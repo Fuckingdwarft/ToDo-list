@@ -1,0 +1,226 @@
+/* From Uiverse.io by elijahgummer */ 
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+    max-width: 350px;  
+    max-height: 350px;
+}
+.buttons {
+  display: flex; /* кнопки будут в одну линию */
+  gap: 50px; /* расстояние между кнопками */
+}
+.btn{
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: ghostwhite;
+  overflow: hidden;
+}
+
+.btn svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.btn span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.btn::before,
+.btn::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.btn::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.btn:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+body {
+    display: flex;
+    justify-content: center;
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* From Uiverse.io by milegelu */ 
+
+  width: 100%;
+  height: 100%;
+
+  background: #000000;
+  --gap: 5em;
+  --line: 1px;
+  --color: rgba(255, 255, 255, 0.2);
+
+  background-image: linear-gradient(
+      -90deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      0deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    );
+  background-size: var(--gap) var(--gap);
+}
+h1{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+
+.input-text {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-weight: 500;
+  font-size: clamp(12px, 0.8vw, 16px);
+  color: #fff;
+  background-color: rgb(28,28,30);
+  box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
+  border-radius: 0.4vw;
+  border: none;
+  outline: none;
+  padding: 0.4vw;
+ width: 100%; max-width: 300px; min-width: 300px;
+ min-height: 25px;
+  transition: .4s;
+}
+
+.input-text:hover {
+  box-shadow: 0 0 0 .15vw rgba(135, 207, 235, 0.186);
+}
+.input-text:focus {
+  box-shadow: 0 0 0 .15vw skyblue;
+}
+.task-list {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    color: aliceblue;
+
+}
+/* From Uiverse.io by kennyotsu */ 
+p{
+    color: aliceblue;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-weight: 500;
+    border-radius: 0.4vw;
+}
+.ul-list{
+  
+  list-style: none;
+  color: aliceblue;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+}
+li{
+  font-size: 25px;
+  font-weight: 400;
+}
+/* From Uiverse.io by SelfMadeSystem */ 
+/* From Uiverse.io by PriyanshuGupta28 */ 
+/* From Uiverse.io by SelfMadeSystem */ 
+/* From Uiverse.io by Ali-Tahmazi99 */ 
+input[type = "checkbox"] {
+  -webkit-appearance: none;
+  display: none;
+  visibility: hidden;
+}
+
+.bar {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: 25px;
+  height: 30px;
+}
+
+.bar span {
+  position: absolute;
+  width: 25px;
+  height: 5px;
+  background: #f1faee;
+  border-radius: 100px;
+  display: inline-block;
+  transition: 0.3s ease;
+  left: 0;
+}
+
+.bar span.top {
+  top: 0;
+}
+
+.bar span.middle {
+  top: 12px;
+}
+
+.bar span.bottom {
+  bottom: 0;
+}
+
+input[type]:checked ~ span.top {
+  transform: rotate(45deg);
+  transform-origin: top left;
+  width: 28px;
+  left: 3px;
+}
+
+input[type]:checked ~ span.bottom {
+  transform: rotate(-45deg);
+  transform-origin: top left;
+  width: 28px;
+  bottom: 4px;
+  box-shadow: 0 0 10px #495057;
+}
+
+input[type]:checked ~ span.middle {
+  transform: translateX(0px);
+  opacity: 0;
+}
+.task-item {
+  display: flex;          /* чекбокс и текст в ряд */
+  align-items: center;    /* выравнивание по вертикали */
+  gap: 10px;              /* расстояние между чекбоксом и текстом */
+  margin-bottom: 30px;
+}
+
+
+.task-text {
+  color: aliceblue;
+  font-size: 20px;
+  
+}
+
+
