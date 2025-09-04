@@ -29,7 +29,7 @@ git clone https://github.com/Fuckingdwarft/ToDo-list
 🌍 Онлайн версия
 
 Проект доступен по ссылке:
-👉 https://fuckingdwarft.github.io/todo-list/
+👉 https://fuckingdwarft.github.io/ToDo-list/
 
 
 
@@ -38,5 +38,6 @@ git clone https://github.com/Fuckingdwarft/ToDo-list
 HTML
 
 CSS
+
 
 JavaScript
