@@ -141,12 +141,11 @@ p{
   
   list-style: none;
   color: aliceblue;
-  gap: 50px;
   padding: 0;
   margin: 0;
 }
 li{
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 400;
 }
 /* From Uiverse.io by SelfMadeSystem */ 
@@ -163,7 +162,8 @@ input[type = "checkbox"] {
   display: block;
   position: relative;
   cursor: pointer;
-  width: 25px;
+  margin-bottom: 20px;
+  width: 45px; /* было 25px */
   height: 30px;
 }
 
@@ -213,13 +213,13 @@ input[type]:checked ~ span.middle {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
 }
 
 .task-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 24px; /* Было 10px, стало 24px */
 }
 
 .delete-btn {
