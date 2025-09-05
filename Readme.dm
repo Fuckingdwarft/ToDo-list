@@ -15,7 +15,7 @@ To-Do List
 
 🖼️ Скриншот
 
-![Превью проекта](https://github.com/Fuckingdwarft/ToDo-list/raw/main/screenshot.png)
+![Превью проекта](https://raw.githubusercontent.com/Fuckingdwarft/ToDo-list/main/screenshot.png)
 
 
 📂 Установка и запуск
@@ -42,5 +42,6 @@ CSS
 
 
 JavaScript
+
 
 
