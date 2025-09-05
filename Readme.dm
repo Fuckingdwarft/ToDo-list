@@ -32,15 +32,14 @@ git clone https://github.com/Fuckingdwarft/ToDo-list
 👉 https://fuckingdwarft.github.io/ToDo-list/
 
 
-
 ⚙️ Технологии
 
 HTML
 
 CSS
 
-
 JavaScript
+
 
 
 
